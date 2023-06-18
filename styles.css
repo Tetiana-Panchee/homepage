@@ -11,9 +11,9 @@ body {
     --primary-text-color: #181820;
     --secondary-text-color: #5c5c62;
     --durability-text-color: #6a737d9c;
-    --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --icon-color: #fcd356;
+    --border-color: #1e4958;
+    --text-decoration-color: #4e79c1;
 }
 
 .container {
@@ -26,6 +26,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.fe {
+    display: flex;
+    flex-direction: column;
 }
 
 .fv {
@@ -58,6 +63,7 @@ body {
     margin-bottom: 15px;
     text-decoration-color: var(--text-decoration-color);
     text-decoration-line: underline;
+    text-decoration-style: dashed;
 }
 
 .contact-info__sub-header {
@@ -80,6 +86,7 @@ body {
     text-decoration: none;
     display: flex;
     justify-content: start;
+    font-size: 14px;
 }
 
 .contact-info__item:not(:last-child) {
@@ -148,11 +155,30 @@ body {
     text-align: justify;
 }
 
+.skills_list-title {
+    color: var(--secondary-text-color);
+    text-align: justify;
+    margin-top: 20px
+}
+
+.list {
+    padding-left: 20px;
+}
+
+.list__item {
+    color: var(--secondary-text-color);
+    text-align: justify;
+    font-size: 14px;
+}
+
 .experiences {
-    flex: 1 1 60%;
     margin-right: 50px;
 }
 
+.experiences__company {
+    display: flex;
+    justify-content: space-between;
+}
 .experiences__header {
     color: var(--secondary-text-color);
     text-align: left;
@@ -175,7 +201,6 @@ body {
 }
 
 .experiences__company-project {
-    margin-left: 15px;
     margin-bottom: 25px;
 }
 
@@ -199,6 +224,7 @@ body {
 
 .additional-info {
     flex: 1 1 40%;
+    margin-left: 40px;
 }
 
 .additional-info__education {
