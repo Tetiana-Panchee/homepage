@@ -61,9 +61,7 @@ body {
 .contact-info__header {
     color: var(--primary-text-color);
     margin-bottom: 15px;
-    text-decoration-color: var(--text-decoration-color);
-    text-decoration-line: underline;
-    text-decoration-style: dashed;
+    text-decoration: underline dashed var(--text-decoration-color);
 }
 
 .contact-info__sub-header {
@@ -179,6 +177,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
 .experiences__header {
     color: var(--secondary-text-color);
     text-align: left;
@@ -268,8 +267,7 @@ body {
     color: var(--secondary-text-color);
 }
 
-@media screen and (max-width: 576px) {
-
+@media screen and (width <= 576px) {
     .main-info,
     .contact_info_container {
         flex-direction: column;
