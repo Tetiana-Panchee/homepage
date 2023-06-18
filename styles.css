@@ -28,6 +28,11 @@ body {
     justify-content: space-between;
 }
 
+.fe {
+    display: flex;
+    flex-direction: column;
+}
+
 .fv {
     display: flex;
     flex-direction: column;
@@ -167,10 +172,13 @@ body {
 }
 
 .experiences {
-    flex: 1 1 60%;
     margin-right: 50px;
 }
 
+.experiences__company {
+    display: flex;
+    justify-content: space-between;
+}
 .experiences__header {
     color: var(--secondary-text-color);
     text-align: left;
@@ -193,7 +201,6 @@ body {
 }
 
 .experiences__company-project {
-    margin-left: 15px;
     margin-bottom: 25px;
 }
 
